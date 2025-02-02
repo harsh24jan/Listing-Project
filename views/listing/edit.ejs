@@ -1,0 +1,78 @@
+<% layout("/layout/boilerplate") -%>
+<body>
+    <div class="row mb-3 offset-2">
+        <div class="col-8 offset-2">
+            <br>
+            <h3>Edit Listing</h3>
+            <form method="post" action="/listing/<%= listings._id %>?_method=PUT" novalidate class="needs-validation" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" name="title" value="<%= listings.title %>" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid information.
+                      </div>
+                      <div class="valid-feedback">
+                        Looks Good.
+                      </div>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea name="description" class="form-control" required><%= listings.description %></textarea>
+                <div class="invalid-feedback">
+          Please provide a valid information.
+        </div>
+        <div class="valid-feedback">
+          Looks Good.
+        </div>
+                </div>
+                <div>
+                <img src="<%-originalUrl%>"/>
+              
+              </div>
+                <div class="mb-3">
+                    <label for="image" class="form-label">Upload New Image</label>
+                    <input type="file" name="image" class="form-control" >
+                    
+       
+
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label for="price" class="form-label">Price</label>
+                        <input type="number" name="price" value="<%= listings.price %>" class="form-control" required>
+                        <div class="invalid-feedback">
+          Please provide a valid information.
+        </div>
+        <div class="valid-feedback">
+          Looks Good.
+        </div>
+                        </div>
+
+                    <div class="mb-3 col-md-8">
+                        <label for="location" class="form-label">Location</label>
+                        <input type="text" name="location" value="<%= listings.location %>" class="form-control" required>
+                        <div class="invalid-feedback">
+          Please provide a valid information.
+        </div>
+        <div class="valid-feedback">
+          Looks Good.
+        </div>
+                        </div>
+                </div>
+                <div class="mb-3">
+                    <label for="country" class="form-label">Country</label>
+                    <input type="text" name="country" value="<%= listings.country %>" class="form-control" required>
+                    <div class="invalid-feedback">
+          Please provide a valid information.
+        </div>
+        <div class="valid-feedback">
+          Looks Good.
+        </div>
+                    </div>
+
+                <button class="btn btn-dark edit-btn">Edit</button>
+            </form>
+            <br><br><br>
+        </div>
+    </div>
+</body>

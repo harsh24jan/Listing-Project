@@ -1,0 +1,171 @@
+body{
+    font-family: "Plus Jakarta Sans", serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container
+{
+flex:1
+}
+
+
+
+/* navbar */
+
+.navbar{
+    height: 5rem;
+    background-color: white;
+   
+}
+.fa-compass
+{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: #222222 !important;
+   font-weight: 600 !important;
+}
+
+/* footer */
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+    
+}
+
+.f-info-links,.f-info-socials,.f-info-brand{
+    
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+
+}
+
+.f-info{
+    height: 8rem;
+    display: flex;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+ 
+   
+}
+
+.f-info-socials i:hover{
+    transform: scale(1.2);
+
+}
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: .5rem;
+}
+
+
+/* card */
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius: 1rem  !important;
+    width: 100% !important;
+    object-fit:cover;
+    height: 20rem;
+}
+
+.card-body {
+  padding: 0;
+}
+.card-text p {
+font-weight: 400;
+}
+
+.show{
+    text-decoration: none;
+}
+.show:hover{
+    transform: scale(1.01);
+}
+
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.25;
+    background-color: white;
+}
+
+.edit-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.edit-btn:hover{
+    opacity: 0.75;
+}
+
+
+/* show page */
+.show-img{
+
+    height: 40vh !important;
+    width: 70vh !important;
+    object-fit: fill !important;
+    border-radius: 2rem !important;
+   
+
+}
+.show-img:hover{
+    transform: scale(1.02);
+   
+}
+.btns{
+    display: flex;
+    /* margin-left: 10rem;
+    margin-bottom: 5rem; */
+   
+}
+
+
+.show-card{
+    padding-left: 0;
+    padding-right:0;
+}
+
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+    padding-left: 1.75rem !important;
+    padding-right: 1.75rem !important;
+}
+
+.add-btn:hover{
+    opacity: 0.85;
+}
+
+.review-card{
+    border: 1px solid black !important;
+
+}
+
+/* MAP */
+#map{
+    height: 400px;
+    width: 80vh;
+}
+
