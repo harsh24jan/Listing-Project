@@ -51,6 +51,10 @@ flex:1
 
 }
 
+.icons{
+    color: black !important;
+}
+
 .f-info{
     height: 8rem;
     display: flex;
